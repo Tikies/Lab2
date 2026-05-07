@@ -1,93 +1,119 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" data-theme="day">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>CV </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Климаш Олександр</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Климаш Олександр</h1>
-        <p>Junior Developer</p>
+    <!-- Кнопка перемикання теми -->
+    <button class="theme-btn" id="theme-btn">🌙 Темна тема</button>
 
-    </header>
+    <div class="container">
 
-    <main>
+        <header>
+            <h1>Климаш Олександр</h1>
+            <p class="subtitle">Junior Developer / Спеціаліст з кібербезпеки</p>
+            <div class="contacts">
+                <span>📧 <a href="mailto:klymash.sasha@gmail.com">klymash.sasha@gmail.com</a></span>
+                <span>|</span>
+                <span>📞 +380 00 000 00 00</span>
+                <span>|</span>
+                <span>🐙 <a href="https://github.com/Tikies" target="_blank">Aleck Klymash</a></span>
+            </div>
+        </header>
 
-        <section>
-            <h2>Про мене</h2>
-            <p>
-                Я студент спеціальності "Кібербезпека" з інтересом до Linux,
-                мережевої безпеки та веб-розробки. Постійно вдосконалюю
-                свої технічні навички та працюю над власними проєктами.
-            </p>
-        </section>
+        <main>
 
-        <section>
-            <h2>Освіта</h2>
-            <ul>
-                <li>
-                    2023 - теперішній час — Бакалавр з кібербезпеки,
-                    Націоональний університет Львівська Політехніка
-                </li>
-            </ul>
-        </section>
+            <section class="cv-section">
+                <h2>Про мене</h2>
+                <p>Я студент спеціальності "Кібербезпека" з інтересом до Linux, мережевої безпеки та веб-розробки. Постійно вдосконалюю свої технічні навички та працюю над власними проєктами.</p>
+            </section>
 
-        <section>
-            <h2>Досвід роботи</h2>
-            <article>
-                <h3>Стажер з IT-підтримки</h3>
-                <ul>
-                    <li>Налаштування робочих станцій</li>
-                    <li>Підтримка користувачів</li>
-                    <li>Робота з Linux-серверами</li>
-                    <li>Розробка сайтів</li>
+            <section class="cv-section">
+                <h2>Освіта</h2>
+                <ul class="styled-list">
+                    <li>2023 – теперішній час — Бакалавр з кібербезпеки, Національний університет «Львівська Політехніка»</li>
                 </ul>
-            </article>
-        </section>
+            </section>
 
-        <section>
-            <h2>Навички</h2>
-            <ul>
-                <li>Linux (CLI, процеси, права доступу)</li>
-                <li>HTML, CSS</li>
-                <li>PHP (базовий рівень)</li>
-                <li>SQL</li>
-                <li>Git</li>
-                <li>Python</li>
-            </ul>
-        </section>
+            <section class="cv-section">
+                <h2>Досвід роботи</h2>
+                <div class="card">
+                    <h3>Стажер з IT-підтримки</h3>
+                    <ul class="styled-list">
+                        <li>Налаштування робочих станцій</li>
+                        <li>Підтримка користувачів</li>
+                        <li>Робота з Linux-серверами</li>
+                        <li>Розробка сайтів</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section>
-            <h2>Проєкти</h2>
-            <ul>
-                <li>
-                    Платформа волонтерства —
-                    <a href="#">Посилання на проєкт</a>
-                </li>
-            </ul>
-        </section>
+            <section class="cv-section">
+                <h2>Навички</h2>
+                <ul class="styled-list">
+                    <li>Linux (CLI, процеси, права доступу)</li>
+                    <li>HTML, CSS</li>
+                    <li>PHP (базовий рівень)</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                    <li>Python</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Мови</h2>
-            <ul>
-                <li>Українська - рідна</li>
-                <li>Англійська - B1</li>
-                <li>Польська - B2</li>
-            </ul>
-        </section>
+            <section class="cv-section">
+                <h2>Проєкти</h2>
+                <ul class="styled-list">
+                    <li>Платформа волонтерства — <a href="#">Посилання на проєкт</a></li>
+                </ul>
+            </section>
 
-    </main>
+            <section class="cv-section">
+                <h2>Мови</h2>
+                <ul class="styled-list">
+                    <li>Українська — рідна</li>
+                    <li>Англійська — B1</li>
+                    <li>Польська — B2</li>
+                </ul>
+            </section>
 
-    <footer>
-        <p>Email: klymash.sasha@gmail.com</p>
-        <p>Телефон: +380 00 000 00 00</p>
-        <p>
-            GitHub: <a href="https://github.com/Tikies">Aleck Klymash</a>
-        </p>
-        <p>© 2026 Климаш Олександр</p>
-    </footer>
+            <!-- Завдання 2: Відгуки з Fetch API -->
+            <section class="cv-section">
+                <h2>Відгуки (Fetch API)</h2>
+                <div id="comments-container">
+                    <p class="loading-text">Завантаження коментарів...</p>
+                </div>
+            </section>
 
+        </main>
+
+        <!-- Завдання 1: Футер з localStorage -->
+        <footer>
+            <p>CV — Климаш Олександр, 2026</p>
+            <div id="sys-info"></div>
+        </footer>
+
+    </div>
+
+    <!-- Завдання 3: Модальне вікно -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-modal">×</button>
+            <h2>Зв'язок зі мною</h2>
+            <!-- Замінити YOUR_ENDPOINT на свій ендпоінт з Formspree -->
+            <form action="https://formspree.io/f/xykopowl" method="POST">
+                <input type="text" name="name" placeholder="Ім'я" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону" required>
+                <textarea name="message" rows="4" placeholder="Повідомлення" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html>                                                                                                                                        
