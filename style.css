@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #f1f5f9;
+}
+
+header {
+  background-color: #1e3a5f;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+
+header p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 1;
+  color: #93c5fd;
+  margin-bottom: 12px;
+}
+
+
+header a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  border-left: 5px solid #1e3a5f;
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e2e8f0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+section p {
+  color: #475569;
+  font-size: 0.97rem;
+}
+
+
+article h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 5px 0 5px 22px;
+  position: relative;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #1e3a5f;
+  font-size: 0.85rem;
+  top: 6px;
+}
+
+main a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main a:hover {
+  color: #1e3a5f;
+  text-decoration: underline;
+}
+
+main a:active {
+  color: #93c5fd;
+}
+
+footer {
+  background-color: #1e3a5f;
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 0 12px;
+    margin: 20px auto;
+  }
+
+  section {
+    padding: 20px 18px;
+  }
+}
