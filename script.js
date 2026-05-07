@@ -23,15 +23,10 @@ function saveAndDisplaySysInfo() {
 saveAndDisplaySysInfo();
 
 
-// ============================================================
-// ЗАВДАННЯ 2: Fetch API — завантажуємо коментарі (варіант 11)
-// ============================================================
-
 async function loadComments() {
     const container = document.getElementById('comments-container');
 
     try {
-        // Варіант 11 — використовуємо posts/11/comments
         const response = await fetch('https://jsonplaceholder.typicode.com/posts/11/comments');
         const comments = await response.json();
 
